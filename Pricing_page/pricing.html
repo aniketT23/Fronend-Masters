@@ -312,12 +312,30 @@
               alert("signup succesfull");
           }
 
+          var data=[];
+      var info={
+      }
+
+
+      info["email"]=email_check;
+      info["password"]=password_check;
+
+      data.push(info);
+
+
+      var userdata=JSON.stringify(data);
+      localStorage.setItem("userdata",userdata);
+
+      console.log(data);
+
       }
 
       var start=document.getElementById("signup_button");
 
       start.addEventListener("click",validation);
 
+
+      
     </script>
     
 </body>
