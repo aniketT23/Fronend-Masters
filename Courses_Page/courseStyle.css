@@ -56,9 +56,13 @@ body {
     padding: 8px;
 }
 
-.course-nav>a:hover {
-    /* background-color: rgb(10, 87, 163); */
+.course-nav>a:focus {
+    background-color: rgb(10, 87, 163);
     color: white;
+}
+
+.course-nav>a:hover {
+    color: #fff;
 }
 
 #course-content {
@@ -75,6 +79,10 @@ body {
     background-size: contain;
     margin: 10px;
     max-width: 100%;
+    transition: opacity 2s;
+    transition: opacity 1s;
+    height: 100%;
+    opacity: .7;
 }
 
 .course-box:nth-child(2) {
@@ -102,8 +110,7 @@ body {
     height: 100%;
     float: right;
     background-color: black;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0));
-    opacity: 1;
+    background: radial-gradient(circle at left, rgba(0, 0, 0, .6) 0, #000 25%);
 }
 
 .img-name {
@@ -207,8 +214,13 @@ body {
 .info>h2>a {
     text-decoration: none;
     color: #e05c58;
+    font-weight: 100;
 }
 
 .info>h2>a:hover {
-    color: #dd625e;
+    color: #f77873;
+}
+
+.course-box:hover {
+    opacity: 1;
 }
