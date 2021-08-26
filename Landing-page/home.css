@@ -243,10 +243,6 @@
 }
 
 .HomeLogos {
-    background: #222 -webkit-linear-gradient(315deg, transparent, rgba(0, 0, 0, 0.7));
-    background: #222 -moz-linear-gradient(315deg, transparent, rgba(0, 0, 0, 0.7));
-    background: #222 -o-linear-gradient(315deg, transparent, rgba(0, 0, 0, 0.7));
-    background: #222 -ms-linear-gradient(315deg, transparent, rgba(0, 0, 0, 0.7));
     background: #222 linear-gradient(135deg, transparent, rgba(0, 0, 0, 0.7));
     position: relative;
 }
