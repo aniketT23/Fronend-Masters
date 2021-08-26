@@ -416,3 +416,141 @@ body {
     color: #aaa;
     font-size: 14px;
 }
+
+
+/* popular Courses */
+
+#popular-main {
+    display: none;
+    max-width: 75%;
+    margin: 2% auto;
+    gap: 2%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+#popular-main>div {
+    display: flex;
+    max-width: 100%;
+    height: 330px;
+}
+
+#popular-main>div>img {
+    width: 65%;
+    height: 100%;
+    flex-grow: 1;
+    opacity: 0.4;
+    transition: opacity 2s;
+}
+
+#popular-main>div>img:hover {
+    opacity: 1;
+}
+
+#popular-main>div>div>h2 {
+    line-height: 1.5;
+    font-size: 27px;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: #dd625e;
+    transition: color .2s;
+}
+
+#popular-main>div>div>h2:hover {
+    color: #f0635e;
+}
+
+#popular-main>div>div {
+    flex-grow: 2;
+    background-color: black;
+    padding-left: 2%;
+    margin: 0%;
+    height: 100%;
+}
+
+.author-name {
+    display: flex;
+    max-width: 30%;
+    margin: 0%;
+}
+
+.author-name>img {
+    max-width: 35%;
+    max-height: 35%;
+    border-radius: 50%;
+}
+
+.author-name>div {
+    margin: 8% 6%;
+    font-size: 18px;
+}
+
+.author-name>div>span {
+    color: #8a8a8a;
+    font-size: 16px;
+}
+
+.author-name+p {
+    line-height: 1.5;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#popular-main>div>div>p+div {
+    line-height: 1.5;
+    color: #8a8a8a;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#popular-main>div>div>p+div>strong {
+    border-radius: 8px;
+    padding: 3px;
+    color: black;
+    background-color: #8a8a8a;
+    line-height: 1.5;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background: #8a8a8a;
+    margin-left: 2px;
+}
+
+.course-btn {
+    margin-top: 7%;
+    margin-left: 0%;
+    margin-bottom: 8%;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Open Sans, sans-serif;
+    color: #e6e6e6;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.course-btn>a:nth-child(1) {
+    background-color: tomato;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    text-align: center;
+    background: #c02d28;
+    font-size: 14px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.course-btn>a:nth-child(2) {
+    background-color: orange;
+    border-radius: 20px;
+    color: #E6E6E6;
+    text-decoration: none;
+    background: #c94f17;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 25px;
+    margin: 10px 8px;
+}
