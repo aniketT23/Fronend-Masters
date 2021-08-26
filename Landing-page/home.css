@@ -200,13 +200,7 @@
 
 .HomeHero .content {
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQYV2NkQAOMUH4DAwMDCDPABODqMAQAKe4BBZTlhh0AAAAASUVORK5CYII="), url(https://static.frontendmasters.com/assets/fm/js/bg1.8d7f86e8bd.jpg) 50% no-repeat;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
     background-size: auto, cover;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: box;
     display: flex;
     flex-direction: column;
@@ -234,8 +228,6 @@
     }
     .HomeHero .content {
         background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQYV2NkQAOMUH4DAwMDCDPABODqMAQAKe4BBZTlhh0AAAAASUVORK5CYII=");
-        -webkit-background-size: auto;
-        -moz-background-size: auto;
         background-size: auto;
     }
 }
@@ -246,8 +238,6 @@
     }
     .HomeHero .content {
         background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQYV2NkQAOMUH4DAwMDCDPABODqMAQAKe4BBZTlhh0AAAAASUVORK5CYII="), url(https://static.frontendmasters.com/assets/fm/js/bg1.8d7f86e8bd.jpg) 50% no-repeat;
-        -webkit-background-size: auto, cover;
-        -moz-background-size: auto, cover;
         background-size: auto, cover;
     }
 }
@@ -394,7 +384,6 @@
 .HomeTweets .next,
 .HomeTweets .prev {
     cursor: pointer;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
     filter: alpha(opacity=70);
     opacity: 0.7;
     position: absolute;
