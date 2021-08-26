@@ -183,8 +183,6 @@ h3 {
 
 .NavMobileHamburger,
 .s-tr {
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
     background-size: 100%;
 }
 
@@ -312,7 +310,6 @@ body {
 .ButtonIcon:before {
     content: "";
     display: inline-block;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
     filter: alpha(opacity=60);
     height: 18px;
     margin-right: 5px;
@@ -322,7 +319,6 @@ body {
 }
 
 .ButtonIcon:hover:before {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=50);
     opacity: 0.5;
 }
@@ -446,10 +442,6 @@ body {
 }
 
 .header {
-    background: -webkit-linear-gradient(0deg, #858585, #130c09);
-    background: -moz-linear-gradient(0deg, #dfcaca, #2c0f02);
-    background: -o-linear-gradient(0deg, #502928, #2b0f02);
-    background: -ms-linear-gradient(0deg, #f5e9e9, #b4592e);
     background: linear-gradient(90deg, #270201, #4b382f);
     color: #858585;
     position: relative;
