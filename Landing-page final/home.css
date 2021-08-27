@@ -76,7 +76,6 @@
 }
 
 .tweet {
-    background: #fff;
     border-radius: 10px;
     color: #222;
     line-height: 1.4;
@@ -432,7 +431,7 @@
 
 @media only screen and (min-width: 1024px) {
     .HomeTweets .tweet {
-        width: 31%;
+        width: 100%;
     }
 }
 

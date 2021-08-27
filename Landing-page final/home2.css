@@ -92,7 +92,6 @@ button {
     font-family: inherit;
 }
 
-img,
 video {
     width: 100%;
 }
@@ -130,7 +129,7 @@ h1 {
 }
 
 h2 {
-    font-size: 21px;
+    font-size: 27px;
 }
 
 h3 {
