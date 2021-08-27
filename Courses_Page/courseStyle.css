@@ -314,6 +314,7 @@ body {
 
 .Sample-video>iframe {
     padding: 2%;
+    margin-left: -10px;
     width: 550px;
     height: 350px;
     border: none;
@@ -438,7 +439,7 @@ body {
 }
 
 #popular-main>div>img {
-    width: 65%;
+    width: 35%;
     height: 100%;
     flex-grow: 1;
     opacity: 0.4;
@@ -473,7 +474,9 @@ body {
 .author-name {
     display: flex;
     max-width: 30%;
+    max-height: 30%;
     margin: 0%;
+    margin-top: -20px;
 }
 
 .author-name>img {
@@ -496,6 +499,7 @@ body {
     line-height: 1.5;
     font-size: 14px;
     margin: 10px 0;
+    padding-right: 3%;
 }
 
 #popular-main>div>div>p+div {
@@ -555,4 +559,106 @@ body {
     font-size: 14px;
     padding: 10px 25px;
     margin: 10px 8px;
+}
+
+
+/* search */
+
+.pop-main {
+    display: grid;
+    max-width: 75%;
+    margin: 2% auto;
+    gap: 2%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.pop-main>div {
+    display: flex;
+    max-width: 100%;
+    height: 330px;
+}
+
+.pop-main>div>img {
+    width: 32%;
+    height: 100%;
+    flex-grow: 1;
+    opacity: 0.4;
+    transition: opacity 2s;
+}
+
+.pop-main>div>img:hover {
+    opacity: 1;
+}
+
+.pop-main>div>div>h2 {
+    line-height: 1.5;
+    font-size: 27px;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: #dd625e;
+    transition: color .2s;
+}
+
+.pop-main>div>div>h2:hover {
+    color: #f0635e;
+}
+
+.pop-main>div>div {
+    flex-grow: 2;
+    background-color: black;
+    padding-left: 2%;
+    margin: 0%;
+    height: 100%;
+}
+
+.pop-main>div>div>p+div {
+    line-height: 1.5;
+    color: #8a8a8a;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.pop-main>div>div>p+div>strong {
+    border-radius: 8px;
+    padding: 3px;
+    color: black;
+    background-color: #8a8a8a;
+    line-height: 1.5;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background: #8a8a8a;
+    margin-left: 2px;
+}
+
+.author {
+    display: flex;
+    max-width: 40%;
+    max-height: 30%;
+    margin: 0%;
+    margin-top: -20px;
+}
+
+.author>img {
+    max-width: 30%;
+    max-height: 30%;
+    border-radius: 50%;
+}
+
+.author>div {
+    margin: 8% 6%;
+    font-size: 18px;
+}
+
+.author>div>span {
+    color: #8a8a8a;
+    font-size: 16px;
+}
+
+.author+p {
+    line-height: 1.5;
+    font-size: 14px;
+    margin: 10px 0;
+    padding-right: 3%;
 }
