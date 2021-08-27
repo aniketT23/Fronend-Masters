@@ -82,9 +82,9 @@ body {
 }
 
 body {
-    background: black;
     color: #e6e6e6;
     font-size: 16px;
+    line-height: 1;
 }
 
 button {
