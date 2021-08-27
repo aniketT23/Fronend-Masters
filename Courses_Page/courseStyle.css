@@ -1,3 +1,4 @@
+@import url("lay.css");
 body {
     background-color: #262626;
     font-family: Open Sans, sans-serif;
@@ -12,10 +13,11 @@ body {
 #title {
     color: #E6E6E6;
     padding: 40px;
-    max-width: 75%;
+    max-width: 78%;
     align-items: center;
     align-content: center;
     margin: auto;
+    margin-top: -20px;
 }
 
 #title h1 {
@@ -38,18 +40,18 @@ body {
 
 #taskbar {
     clear: both;
-    background-color: #1E1E1E;
+    background-color: #141414;
     width: 100%;
 }
 
 .course-nav {
-    background-color: #1E1E1E;
-    padding: 10px;
-    margin-left: 12%;
+    background-color: #141414;
+    padding: 2px;
+    margin-left: 13%;
 }
 
 .course-nav a {
-    background-color: #1E1E1E;
+    background-color: #141414;
     color: #e6e6e6a2;
     text-decoration: none;
     font-size: 16px;
@@ -74,7 +76,7 @@ body {
     margin: auto;
     margin-top: 2%;
     display: grid;
-    gap: 1%;
+    gap: 3%;
     max-width: 75%;
     grid-template-columns: repeat(2, 50%);
 }
