@@ -85,7 +85,6 @@ body {
     background: black;
     color: #e6e6e6;
     font-size: 16px;
-    line-height: 1.5;
 }
 
 button {
@@ -127,6 +126,7 @@ hr {
 
 h1 {
     font-size: 36px;
+    font-weight: 600;
 }
 
 h2 {
@@ -236,8 +236,12 @@ body {
     color: #fff;
     display: block;
     line-height: 1.25;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
+}
+
+.ButtonMega {
+    max-width: 60%;
 }
 
 .Button:hover {

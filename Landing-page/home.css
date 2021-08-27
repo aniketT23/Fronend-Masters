@@ -483,11 +483,16 @@
     margin-left: 200px;
 }
 
+.HomeCta.lazyloaded {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQYV2NkQAKMULYvAwPDZhgHLAYAD6kBBEMDSU4AAAAASUVORK5CYII=), radial-gradient(rgba(0, 0, 0, 0.4), rgba(36, 33, 33, 0.8)), url(https://static.frontendmasters.com/assets/fm/js/static/bg2.c89a0cad3a.jpg) center no-repeat;
+    background-size: auto, auto, auto;
+    background-size: auto, cover, cover;
+}
+
 .HomeCta {
     background: url(https://static.frontendmasters.com/assets/fm/js/static/bg2.c89a0cad3a.jpg) center no-repeat;
     background-size: auto, cover, cover;
     align-items: center;
-    display: flex;
     min-height: 600px;
     text-align: center;
 }
