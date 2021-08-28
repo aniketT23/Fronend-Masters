@@ -155,3 +155,15 @@ function search() {
 }
 
 val.addEventListener("change", search);
+
+var x = localStorage.getItem("userdata");
+var y = JSON.parse(x);
+console.log(y);
+
+var user = document.getElementById("login");
+
+
+y.forEach(function(p) {
+
+    user.innerHTML = p.username;
+})
