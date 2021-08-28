@@ -342,7 +342,7 @@ div.app .img {
 }
 
 .header {
-    background: linear-gradient(90deg, #3d0907, #351405);
+    background: linear-gradient(90deg, #3d0907, rgb(78, 29, 7));
     color: #858585;
     position: relative;
     z-index: 99;
