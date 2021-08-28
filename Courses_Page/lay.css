@@ -342,10 +342,10 @@ div.app .img {
 }
 
 .header {
-    background-color: #4E342E;
+    background: linear-gradient(90deg, #3d0907, #351405);
     color: #858585;
     position: relative;
-    padding: 10px 0;
+    z-index: 99;
 }
 
 .header .inner {
@@ -458,7 +458,7 @@ div.app .img {
 }
 
 .Nav .Button {
-    color: black;
+    color: #fff;
     margin: 10px 0;
     padding: 0 20px;
     background-color: #c02d28;

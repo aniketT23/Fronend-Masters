@@ -144,6 +144,8 @@ function search() {
 
         } else if (val.value == "") {
             popdiv.remove();
+            content.style.display = "grid";
+
         }
 
 
