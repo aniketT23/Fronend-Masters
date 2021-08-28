@@ -1,16 +1,13 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>LoginPage</title>
     <link rel="stylesheet" href="Loginn.css">
-
     </style>
 </head>
-
 <body>
     <div class="outer-flex">
         <div class="inner-flex">
@@ -42,21 +39,17 @@
                     <polygon points="0,2 0,0 100,0 100,10" fill="url(#linear)"></polygon>
                 </svg>
             </header>
-
-
-
             <div id="box1">
-
                 <label>Username or Email</label>
-
                 <br>
                 <input type="text" class="text" id="username" placeholder="Username or Email">
-                <br>     <p class="alert_color" id="email_alert"></p>
+                <br>
+                <p class="alert_color" id="email_alert"></p>
                 <label>Password</label>
-
                 <br>
                 <input type="password" class="text" id="password" placeholder="Password">
-                <br> <p class="alert_color" id="password_alert"></p>
+                <br>
+                <p class="alert_color" id="password_alert"></p>
                 <input type="checkbox" id="horns" name="horns">
                 <label> Remember Me</label>
                 <br>
@@ -65,147 +58,100 @@
                 </button>
                 <a class="recover" href="/recover-password/">Forgot your password?</a>
             </div>
-
         </div>
     </div>
     <div id="box2">
-
-
-
-
         <footer role="contentinfo" class="FooterMain">
             <div class="wraps">
                 <div class="row">
                     <div class="logos"><a class="s-tr" href="/">FrontendMasters</a></div>
-
                     <nav class="Nav NawvMobile NavFooter">
-                    
                         <ul>
                             <li class="items"><a href="#">Courses</a></li>
                             <li class="items"><a href="#">Learn</a></li>
                             <li class="items"><a href="#">Teachers</a></li>
                             <li class="items"><a href="#">Guides</a></li>
                             <li class="items"><a href="#">Pricing</a></li>
-                            <li class="items"><a onclick="login()">Login</a></li>
+                            <li class="active"><a onclick="login()">Login</a></li>
                             <li class="items"><a onclick="signup()">Join Now</a></li>
                             <li class="items"><a href="#">FAQ</a></li>
                         </ul>
                     </nav>
-
-
                     <div class="app">
                         <img src="https://developer.apple.com/assets/elements/icons/download-on-the-app-store/download-on-the-app-store.svg"
                             width="150px" height="70px">
                         <a id="" class="Android"></a> <img class="app"
                             src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
                             height="65">
-
                         </a>
-                   
                     </div>
-
-                 
                     <div class="twitter">
-                        <img src="https://image.flaticon.com/icons/png/128/733/733579.png" width="40px"height="40px" class="imageGap">
-                        <img src="https://image.flaticon.com/icons/png/128/174/174857.png"
-                        width="40px"height="40px"class="imageGap">
-                        <img src="https://image.flaticon.com/icons/png/128/733/733547.png"
-                        width="40px"height="40px"class="imageGap">
-                        <img src="https://image.flaticon.com/icons/png/128/1409/1409946.png"
-                        width="40px"height="40px"class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/733/733579.png" width="40px" height="40px"
+                            class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/174/174857.png" width="40px" height="40px"
+                            class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/733/733547.png" width="40px" height="40px"
+                            class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/1409/1409946.png" width="40px" height="40px"
+                            class="imageGap">
                         <p class="email">Email: <a href="">support@frontendmasters.com</a></p>
-                    
-                        </div>
-                    <div class="copyright">© 2021 Frontend Masters &middot; 
-                        <a 
-                            href="https://static.frontendmasters.com/assets/legal/MasterServicesAgreement.pdf">Terms of
-                            Service</a> &middot; <a 
+                    </div>
+                    <div class="copyright">© 2021 Frontend Masters &middot;
+                        <a href="https://static.frontendmasters.com/assets/legal/MasterServicesAgreement.pdf">Terms of
+                            Service</a> &middot; <a
                             href="https://static.frontendmasters.com/assets/legal/PrivacyPolicy.pdf">Privacy Policy</a>
-                           
-                    </div> <div class="end1">Frontend Masters is proudly made in Minneapolis, MN</div>
-                  
-                   
+
+                    </div>
+                    <div class="end1">Frontend Masters is proudly made in Minneapolis, MN</div>
                 </div>
             </div>
     </div>
-
     </footer>
     </div>
     </div>
-
-
     </div>
-
-
-
-
 </body>
 
 </html>
-
 <script>
-   function validation()
-      {
-          var email_check=document.getElementById("username").value;
-       
-         var password_check=document.getElementById("password").value;
+    function validation() {
+        var email_check = document.getElementById("username").value;
+        var password_check = document.getElementById("password").value;
+        if (email_check == "") {
+            // alert("All fields are mandatory");
+            var alert_email = document.getElementById("email_alert");
 
+            alert_email.textContent = "please enter a valid email"
+            alert_email.setAttribute("class", "alert_color")
+        }
+        else {
+            var alert_email = document.getElementById("email_alert");
 
+            alert_email.textContent = "";
+        }
 
-          if(email_check=="")
-          {
-             // alert("All fields are mandatory");
-              var alert_email=document.getElementById("email_alert");
-             
-              alert_email.textContent= "please enter a valid email"
-              alert_email.setAttribute("class","alert_color")
+        if (password_check == "" || password_check.length < 6) {
+            var alert_password = document.getElementById("password_alert");
+            alert_password.textContent = "password should be atleast 6 char long";
 
-          }
-          else
-          {
-            var alert_email=document.getElementById("email_alert");
-             
-             alert_email.textContent= "";
+            //  alert_password.setAttribute("style","color:orange")
 
-          }
+            alert_password.setAttribute("style", "font-style: italic;")
+        }
+        else if (email_check != "" && password_check != "" || password_check > 6) {
+            alert("signup succesfull");
+        }
+        var data = [];
+        var info = {
+        }
+        info["username"] = email_check;
+        info["password"] = password_check;
+        data.push(info);
+        var userdata = JSON.stringify(data);
+        localStorage.setItem("userdata", userdata);
+        console.log(data);
+    }
+    var start = document.getElementById("login_btn");
+    start.addEventListener("click", validation);
 
-          if( password_check=="" || password_check.length <6 )
-          {
-            var alert_password=document.getElementById("password_alert");
-            alert_password.textContent="password should be atleast 6 char long";
-
-          //  alert_password.setAttribute("style","color:orange")
-
-          alert_password.setAttribute("style","font-style: italic;")
-          } 
-            
-          else
-          {
-              alert("signup succesfull");
-          }
-          var data=[];
-      var info={
-      }
-
-
-      info["username"]=email_check;
-      info["password"]=password_check;
-
-      data.push(info);
-
-
-      var userdata=JSON.stringify(data);
-      localStorage.setItem("userdata",userdata);
-
-      console.log(data);
-
-      }
-
-      var start=document.getElementById("login_btn");
-
-      start.addEventListener("click",validation);
-
-
-    
-    
 </script>
