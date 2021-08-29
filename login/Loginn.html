@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="Loginn.css">
     </style>
 </head>
+
 <body>
     <div class="outer-flex">
         <div class="inner-flex">
@@ -17,8 +19,7 @@
                     <div class="wraps">
                         <div class="logos"><a class="s-tr" href="Loginn.html">FrontendMasters</a></div>
                         <label class="NavMobileHamburger" for="open-nav-main">Menu</label>
-                        <nav class="Nav NavMobile NavMain"><input class="toggle-target" id="open-nav-main"
-                                type="checkbox">
+                        <nav class="Nav NavMobile NavMain"><input class="toggle-target" id="open-nav-main" type="checkbox">
                             <ul>
                                 <li class="items"><a href="HTML/login.html">Courses</a></li>
                                 <li class="items"><a href="HTML/joinnow.html">Learn</a></li>
@@ -78,28 +79,20 @@
                         </ul>
                     </nav>
                     <div class="app">
-                        <img src="https://developer.apple.com/assets/elements/icons/download-on-the-app-store/download-on-the-app-store.svg"
-                            width="150px" height="70px">
-                        <a id="" class="Android"></a> <img class="app"
-                            src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
-                            height="65">
+                        <img src="https://developer.apple.com/assets/elements/icons/download-on-the-app-store/download-on-the-app-store.svg" width="150px" height="70px">
+                        <a id="" class="Android"></a> <img class="app" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="65">
                         </a>
                     </div>
                     <div class="twitter">
-                        <img src="https://image.flaticon.com/icons/png/128/733/733579.png" width="40px" height="40px"
-                            class="imageGap">
-                        <img src="https://image.flaticon.com/icons/png/128/174/174857.png" width="40px" height="40px"
-                            class="imageGap">
-                        <img src="https://image.flaticon.com/icons/png/128/733/733547.png" width="40px" height="40px"
-                            class="imageGap">
-                        <img src="https://image.flaticon.com/icons/png/128/1409/1409946.png" width="40px" height="40px"
-                            class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/733/733579.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/174/174857.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/733/733547.png" width="40px" height="40px" class="imageGap">
+                        <img src="https://image.flaticon.com/icons/png/128/1409/1409946.png" width="40px" height="40px" class="imageGap">
                         <p class="email">Email: <a href="">support@frontendmasters.com</a></p>
                     </div>
                     <div class="copyright">© 2021 Frontend Masters &middot;
                         <a href="https://static.frontendmasters.com/assets/legal/MasterServicesAgreement.pdf">Terms of
-                            Service</a> &middot; <a
-                            href="https://static.frontendmasters.com/assets/legal/PrivacyPolicy.pdf">Privacy Policy</a>
+                            Service</a> &middot; <a href="https://static.frontendmasters.com/assets/legal/PrivacyPolicy.pdf">Privacy Policy</a>
 
                     </div>
                     <div class="end1">Frontend Masters is proudly made in Minneapolis, MN</div>
@@ -123,8 +116,7 @@
 
             alert_email.textContent = "please enter a valid email"
             alert_email.setAttribute("class", "alert_color")
-        }
-        else {
+        } else {
             var alert_email = document.getElementById("email_alert");
 
             alert_email.textContent = "";
@@ -137,13 +129,11 @@
             //  alert_password.setAttribute("style","color:orange")
 
             alert_password.setAttribute("style", "font-style: italic;")
-        }
-        else if (email_check != "" && password_check != "" || password_check > 6) {
+        } else if (email_check != "" && password_check != "" || password_check > 6) {
             alert("signup succesfull");
         }
         var data = [];
-        var info = {
-        }
+        var info = {}
         info["username"] = email_check;
         info["password"] = password_check;
         data.push(info);
@@ -153,5 +143,4 @@
     }
     var start = document.getElementById("login_btn");
     start.addEventListener("click", validation);
-
 </script>
