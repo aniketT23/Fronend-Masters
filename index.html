@@ -5,10 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Frontend-Masters</title>
-    <link rel="stylesheet" href="home.css">
-    </style>
-    <link rel="stylesheet" href="home2.css">
-    <link rel="stylesheet" href="lay1.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/home2.css">
+    <link rel="stylesheet" href="./css/lay1.css">
 </head>
 
 <body>
@@ -155,31 +154,6 @@
 
 </html>
 
-<script>
-    var slide_index = 1;
-    displaySlides(slide_index);
-
-    function nextSlide(n) {
-        displaySlides((slide_index += n));
-    }
-
-    function currentSlide(n) {
-        displaySlides((slide_index = n));
-    }
-
-    function displaySlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("showSlide");
-        if (n > slides.length) {
-            slide_index = 1;
-        }
-        if (n < 1) {
-            slide_index = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slide_index - 1].style.display = "block";
-    }
+<script src="./javascript/index.js">
 </script>
 </script>

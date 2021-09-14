@@ -140,10 +140,12 @@ function search() {
             popdiv.setAttribute("class", "pop-main");
             body.insertBefore(popdiv, pop);
             content.style.display = "none";
+            pop.style.display = "none";
             popdiv.style.display = "grid";
 
         } else if (val.value == "") {
-            popdiv.remove();
+            popdiv.innerHTML = null;
+
             content.style.display = "grid";
 
         }
@@ -154,7 +156,7 @@ function search() {
 
 }
 
-val.addEventListener("change", search);
+val.addEventListener("input", search);
 
 var x = localStorage.getItem("userdata");
 var y = JSON.parse(x);
