@@ -1,6 +1,7 @@
 # Fronend-Masters_Clone_Project
 ---
 This project is a clone of Frontend-Masters,an edu-tech company offering various courses for web Development,frontend offers abundant courses like javascript, vue, react with different tutors.
+Frontend Masters is an Edtech Website that lets users take courses related to frontend technologies like CSS, React, Angular, Vue, and many more. It has the ability to combining a simple user experience and interface with enough depth for power users.
 
 ## Contributors
 ----
@@ -26,7 +27,7 @@ We have designed the carousel  functionality of twitter using javascript as assi
 ## Pricing Page
 ----
 The pricing page consist of various subscription according to yearly,monthly and teams and the payment module changes according to that, as if you choose the indivisiual pricing it will show the pricing for that and same for others packages, the pricing page is also the signup part for the frontend master as without paying up the price you can only access the preview part of the courses.
-![landing page](https://github.com/aniketT23/Fronend-Masters/blob/master/img/pricing.JPG  "Logo Title Text 1")
+![landing page](https://github.com/aniketT23/Fronend-Masters/blob/master/img/Screenshot%202021-08-29%20at%2017-44-30%20Document.png "Logo Title Text 1")
 
 ## Login Page
 ----
