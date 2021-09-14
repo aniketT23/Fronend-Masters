@@ -1289,3 +1289,14 @@ body {
     top: -32px;
     left: -20px;
 }
+
+.para{
+    font-size: 20px;
+}
+
+.para >a {
+    color:#dd625e;
+}
+#termsbox u {
+    color: #dd625e;
+}
